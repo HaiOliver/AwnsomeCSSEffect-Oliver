@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="1.jpg" width="250px" height="300px" />
+        </div>
+        <div class="swiper-slide">
+          <img src="2.jpeg" width="250px" height="300px" />
+        </div>
+        <div class="swiper-slide">
+          <img src="3.jpeg" width="250px" height="300px" />
+        </div>
+        <div class="swiper-slide">
+          <img src="4.jpeg" width="250px" height="300px" />
+        </div>
+        <div class="swiper-slide">
+          <img src="5.jpeg" width="250px" height="300px" />
+        </div>
+        <div class="swiper-slide">
+          <img src="6.jpeg" width="250px" height="300px" />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false
+        },
+
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true
+        }
+      })
+    </script>
+  </body>
+</html>
