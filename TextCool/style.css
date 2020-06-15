@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700& display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 6em;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 900;
+    margin: 20px 0 0 ;
+
+
+}
+
+
+h2:before {
+    content: " ";
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    left: 120%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, black 100%);
+    animation: Oliver 9.5s linear forwards;
+    animation-delay: 30s;
+    -webkit-animation: Oliver 9.5s linear forwards;
+}
+
+@keyframes Oliver {
+
+    0% {
+        left: 120%;
+    }
+
+    100% {
+        left: -20%;
+    }
+}
+
+h2 span {
+    color: #ff022c;
+}
+
+video {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
