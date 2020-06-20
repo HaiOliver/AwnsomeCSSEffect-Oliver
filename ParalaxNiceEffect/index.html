@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title of the document</title>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+<!-- Image -->
+<section class="zoom">
+  <img src="text.png" class="text"/>
+ 
+  <img src="mountain1.png" class="layer1"/>
+  <img src="mountain2.png" class="layer2"/>
+</section>
+<!-- text -->
+<section class="content">
+  <h2>Welcome Oliver</h2>
+  <p>Lorem Ipsum is simply dummy text of the printing and 
+    typesetting industry. Lorem Ipsum has been the industry's 
+    standard dummy text ever since the 1500s, when an unknown 
+    printer took a galley of type and scrambled it to make a 
+    type specimen book. It has survived not only five centuries, 
+    but also the leap into electronic typesetting, 
+    remaining essentially unchanged. </p>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(window).scroll(function(){
+      //  return number px scroll vertically
+       var scroll = $(window).scrollTop();
+      // MAKE MOUNTAIN LEFT BIGGER
+      $('.layer1').css({
+        width: (100+ scroll/5)+"%"
+     
+      })
+        // MAKE MOUNTAIN LEFT BIGGER
+      $('.layer2').css({
+        width: (100+ scroll/5)+"%",
+        left: scroll/50 + "%"
+      })
+        // MAKE TEXT RUN ON TOP
+        
+        $('.text').css({
+        top: -scroll/10 + "%"
+      })
+    })
+</script>
+
+</body>
+</html>

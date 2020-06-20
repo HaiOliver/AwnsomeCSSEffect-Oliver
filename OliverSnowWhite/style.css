@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* background view */
+section.zoom {
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 1000px;
+    /* MOST IMPORTANT MAKE MOUNTAINT GROW BIGGER AND DISAPPEAR */
+    overflow: hidden;
+    position: relative;
+    background-size: cover
+}
+
+section.zoom:before {
+
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    content: '0';
+    bottom:0;
+    /* MOST IMPORTANT MAKE MOUNTAINT GROW BIGGER AND DISAPPEAR */
+    z-index:999;
+    /* MOST IMPORTANT MAKE MOUNTAINT GROW BIGGER AND DISAPPEAR */
+    background: linear-gradient(transparent, #fff);
+    
+}
+
+/* left mountain */
+section.zoom .layer1{
+    width: 100%;
+    /* top:0px; */
+    position: absolute;
+    left:40%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+/* right mountain */
+section.zoom .layer2{
+    width: 100%;
+    /* top:0px; */
+    position: absolute;
+    right:0;
+    
+}
+
+/* Text */
+section.zoom .text{
+    width: 100%;
+    top:0px;
+    position: absolute;
+    right:0;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+
+
+/* text content */
+
+section.content{
+    padding:100px;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+section.content h2{
+    padding:0;
+    margin:0;
+    font-size: 4em;
+}
+
+section.content p{
+    font-size: 1.2em;
+}
+
+.Oliver{
+    font-size: 10em;
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    color: #fff;
+    text-shadow: 10px 5px 20px   black;
+    
+
+}
