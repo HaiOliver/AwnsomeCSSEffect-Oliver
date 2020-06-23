@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title of the document</title>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+<!-- section 1 -->
+<section>
+  <div>
+    <h2 class="reveal">Oliver practise this scroll</h2>
+    <h2 class="reveal">Text display when scrolling</h2>
+    <img src="Ibogaine-treatment.jpg" width="600px" height="400px"/>
+  </div>
+
+  
+</section>
+
+<!-- section 2 -->
+<section>
+  <div>
+    <h2 class="reveal">Oliver practise this scroll</h2>
+    <h2 class="reveal">Text display when scrolling</h2>
+    <img src="orange-sunset-with-dark-clouds-over-bert-blokhuis.jpg" width="600px" height="400px"/>
+  </div>
+
+</section>
+
+
+<!-- section 3 -->
+<section>
+  <div>
+    <h2 class="reveal">Oliver practise this scroll</h2>
+    <h2 class="reveal">Text display when scrolling</h2>
+    <img src="sea-sunset-clouds-horizon-seascape-scenery-nature-4K-109.jpg" width="600px" height="400px"/>
+  </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>	
+<script>
+  const reveal = gsap.utils.toArray('.reveal');
+  reveal.forEach((text,i)=>{
+    ScrollTrigger.create({
+      trigger: text,
+      toggleClass:'active',
+      start:"top 90%",
+      end:"top 20%",
+      markers: true
+    })
+  })
+
+  const images= gsap.utils.toArray('img');
+  images.forEach((img,i)=>{
+    ScrollTrigger.create({
+      trigger: img,
+      toggleClass:'active',
+      start:"top 90%",
+      end:"top 20%",
+      markers: true
+    })
+  })
+</script>
+
+
+</body>
+</html>

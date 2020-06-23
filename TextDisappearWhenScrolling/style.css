@@ -1,0 +1,114 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #061c2d;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+       
+}
+
+/* set css all text */
+section .reveal{
+    color:#fff;
+    font-size: 4em;
+    padding:0 10px;
+    font-weight:500;
+    position: relative;
+    /*disappearrightorleft*/
+    transform-origin: left;
+    /*KEYHERE->MAKESCALE0->DISAPPEAR*/
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    /*howlongdisappear*/transition: 0.5s;
+  
+    /*delay*/transition-delay: 0.5s;
+}
+
+section .reveal.active{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transition-delay: 0.5ms;
+}
+
+section .reveal:before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* set background will cover original text */
+    background: #e02bff;
+}
+
+/* set css second text in each section */
+section .reveal:nth-child(2){
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    font-weight:300;
+    display: inline-block;
+    transform-origin:right;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+    transition-delay: 0.5s;
+}
+
+section .reveal:nth-child(2):before{
+    background: #ffeb3b;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+}
+
+
+section .reveal.active:before{
+    transform:scaleX(0);
+    -webkit-transform:scaleX(0);
+    -moz-transform:scaleX(0);
+    -ms-transform:scaleX(0);
+    -o-transform:scaleX(0);
+    transition-delay:0.5s
+}
+
+/* set image css */
+
+section img{
+    position: relative;
+    display: block;
+    letter-spacing: -100px;
+    margin-left:10px;
+    margin-top:20px;
+    max-width: 700px;
+    opacity: 0;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+}
+
+section img.active{
+  opacity: 1;  
+}
