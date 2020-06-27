@@ -1,0 +1,99 @@
+body{
+    padding:0;
+    margin:0;
+    background: #f2f2f2;
+
+}
+
+.container{
+
+    width:1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width:300px;
+    height:400px;
+    background:#fff;
+    margin:20px 0;
+    /* MAKE IT LOOK 3D */
+    transform-style: preserve-3d;
+   
+    transform:perspective(2000px);
+    -webkit-transform:perspective(2000px);
+    -moz-transform:perspective(2000px);
+    -ms-transform:perspective(2000px);
+    -o-transform:perspective(2000px);
+    /* create shadow -> text */
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+/* card will flip out when hover */
+
+.card:hover{
+    /* ============KEY HERE -> rotate -10deg  for A-xis*/
+    transform:perspective(2000px) rotate(-10deg);
+    -webkit-transform:perspective(2000px) rotate(-10deg);
+    -moz-transform:perspective(2000px) rotate(-10deg);
+    -ms-transform:perspective(2000px) rotate(-10deg);
+    -o-transform:perspective(2000px) rotate(-10deg);
+    /* create shadow -> text => change value 300px to 20px -> LOOK VERY REAL SHADOW*/
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.card .imgBox{
+    position: relative;
+    width:100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+/* hover -> card will open */
+.card:hover .imgBox{
+    /* ============= ROTATE y-axis -> flip out 135 degree===================== */
+    transform: rotateY(-135deg);
+    -webkit-transform: rotateY(-135deg);
+    -moz-transform: rotateY(-135deg);
+    -ms-transform: rotateY(-135deg);
+    -o-transform: rotateY(-135deg);
+}
+
+/* .card .imgBox .img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left:0;
+    top:0;
+    object-fit: cover;
+} */
+
+/* make text go inside */
+.card .details{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+
+
+
+
+
