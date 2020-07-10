@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background:#000;
+}
+
+.box {
+    position: relative;
+    width:200px;
+    height:200px;
+    transform-style: preserve-3d;
+    animation: oliver 25s linear infinite;
+
+    
+
+}
+/* make rotate -> ++ perspective -> small perspective */
+@keyframes oliver{
+    0%{
+            transform:perspective(1000px) rotateY(0deg)
+    }
+    100%{
+     /*    360 -> rotate -> around  */
+        transform:perspective(1000px) rotateY(360deg)
+    }
+}
+
+.box span {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform-origin: center;
+    transform-style:preserve-3d;
+   /*  key here -> rotateY + move in Z axis */
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px)
+}
+
+.box span img{
+    position:absolute;
+    top:0;
+    left:0;
+   /*  make image -> whole ratio */
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
