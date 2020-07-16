@@ -1,0 +1,55 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:black;
+}
+
+.container{
+    width:800px;
+    height:600px;
+    position: relative;
+    border: 2px solid white;
+}
+
+.container .box{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+.container .box:nth-child(1){
+    background: url(https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    width: 100%;
+    height:100%;
+    background-position: center;
+}
+
+.container .box:nth-child(2){
+    width: 100%;
+    height:100%;
+    background: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    z-index:2;
+    transition: 0.5s;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 51% 48%, 0% 100%);
+}
+
+.container .box:nth-child(2):hover{
+     /* key here -> focus on box 2 */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container .box:nth-child(1):hover ~
+.box:nth-child(2) {
+    /* key here -> focus on box 2 */
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+}
+
