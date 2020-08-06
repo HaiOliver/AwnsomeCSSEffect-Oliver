@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: grey;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    width:1000px;
+    position: relative;
+}
+
+.card{
+    position: relative;
+    width:400px;
+    height:300px;
+}
+
+.card .face.face1{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    align-items: center;
+    background:pink;
+    transform-origin: bottom;
+}
+
+.card .face.face1 img{
+    position: absolute;
+    width:100%;
+    height:80%;
+    top:0;
+    left:0;
+}
+
+.card .face.face1 h3{
+    text-align: center;
+    color:#fff;
+    margin:10px 0 0 ;
+    font-size: 1.5em;
+    position: absolute;
+    top:80%;
+    
+}
+
+
+/* hover-> img -> up ->display */
+.card:hover .face.face1{
+    transform: translateY(-100%) rotateX(90deg);
+    transition: 2s;
+}
+
+/* hover-> text -> up ->display */
+.card:hover .face.face2{
+    
+    transform: translateY(0) rotateX(0deg);
+    transition: 2s;
+}
+
+
+.card .face.face2{
+    background: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+ /*    key -> make look 3D */
+    transform-origin: top;
+    transform-style: preserve-3d;
+     /*    default -> text hide bc rotateX = 90deg */
+    transform: translateY(100%) rotateX(90deg);
+
+}
+
+/* make -> text div == img div */
+.card:hover .face{
+    height:100%;
+    width:100%;
+}
+
+
+
+
+
+

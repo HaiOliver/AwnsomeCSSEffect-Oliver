@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+section{
+    height:calc(100vh - 50px);
+    background: url('./740016.jpg');
+    
+    background-size: cover;
+}
+
+ul{
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin:0;
+    padding:0;
+    background:#f00;
+    width: 100% ;
+    height:50px;
+    display:flex;
+
+
+}
+
+ul li{
+    position:relative;
+    width:20%;
+    height: 100%;
+    list-style: none;
+   /*  key -> choose color -> color -> car  */
+    mix-blend-mode: hue;
+}
+
+
+/* individual li */
+ul li:nth-child(1){
+    background:#34eb40 ;
+}
+ul li:nth-child(2){
+    background:#df34eb ;
+}
+ul li:nth-child(3){
+    background: #34ebe5;
+}
+ul li:nth-child(4){
+    background:#50ba6b ;
+}
+ul li:nth-child(5){
+    background:#c979c5 ;
+}
+
+
+/* hover part */
+ul li:hover:nth-child(1){
+    box-shadow: 0 0 0 1500px #34eb40 ;
+}
+ul li:hover:nth-child(2){
+    box-shadow: 0 0 0 1500px #df34eb ;
+}
+ul li:hover:nth-child(3){
+    box-shadow: 0 0 0 1500px #34ebe5;
+}
+ul li:hover:nth-child(4){
+    box-shadow: 0 0 0 1500px #50ba6b ;
+}
+ul li:hover:nth-child(5){
+    box-shadow: 0 0 0 1500px #c979c5 ;
+}
+
+ul:hover li{
+    opacity:0;
+}
+
+/* key -> make div -> 100% color */
+ul li:hover{
+    opacity: 1;
+}
