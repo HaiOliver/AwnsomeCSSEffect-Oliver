@@ -1,0 +1,220 @@
+body{
+      min-height:100vh;
+      background: black;
+}
+
+.container{
+      width: 1100px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.card{
+      position: relative;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background:black;
+      width:400px;
+      height:700px;
+      margin:30px;
+      /* key-> remove unnecessary */
+      overflow: hidden;
+      box-shadow: inset 0px 20px 50px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.container .card::before{
+      content:'';
+      /* key -> half -> different color */
+       width:50%;
+      top:2px;
+      left:2px;
+      bottom:2px;
+      position: absolute;
+      background:rgba(255,255,255,0.1);
+      pointer-events:none;
+
+}
+
+.container .card .content{
+      padding: 30px;
+      text-align: center;
+}
+
+.container .card .content h2{
+      position:absolute;
+      right:30px;
+      font-size: 4em;
+      font-weight: 800;
+      color:#1779ff;
+      transition:0.5;
+      opacity: 0.1;
+      z-index:1;
+}
+
+.container .card:hover .content h2{
+      opacity: 1;
+      /* key -> hover number -> move top 70px */
+      transform: translateY(-70px)
+}
+
+.container .card .content h3{
+      position: absolute;
+      color:white;
+      z-index:2;
+      opacity: 0.5;
+      transition:0.5s;
+      letter-spacing: 1px;
+      font-size:1.5em;
+}
+
+
+.container .card:hover .content h3,
+.container .card:hover .content p{
+      opacity: 1;
+}
+
+
+.container .card .content p{
+      position: relative;
+      font-size: 1em;
+      color: white;
+      z-index:2;
+      opacity:0.5;
+      transition:0.5s;
+}
+
+.container .card .content a{
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 15px;
+      background: white;
+      color:#0c002b;
+      text-decoration: uppercase;
+      font-weight:600;
+}
+
+
+.container .card span{
+      transition: 0.5s;
+     
+}
+
+/* span 1 */
+
+.container .card span:nth-child(1){
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      overflow: hidden;
+      /* key -> height of moving line */
+      height:2px;
+      /* key ->  move left to right, transparent to blue */
+      background: linear-gradient(to left, transparent,#1779ff);
+      /* key -> make move left to right */
+      animation: oliver1  2s linear infinite
+}
+
+/* key -> make move left to right */
+@keyframes oliver1{
+      0%{
+            transform: translateX(-100%);
+      }
+      100%{
+            transform: translateX(100%);
+      }
+}
+
+
+/* span 2 */
+
+.container .card span:nth-child(2){
+      position: absolute;
+      top:0;
+      right:0;
+            /* key -> width of moving line */
+      width:3px;
+
+
+      height:100%;
+      /* key ->  move top to bottom, transparent to blue */
+      background: linear-gradient(to bottom, transparent,#1779ff);
+      /* key -> make move left to right */
+      animation: oliver2  2s linear infinite;
+      /* key -> make work square together */
+      animation-delay: 1s;
+}
+
+/* key -> make move top to bottom */
+@keyframes oliver2{
+      0%{
+            transform: translateY(-100%);
+      }
+      100%{
+            transform: translateY(100%);
+      }
+}
+
+
+/* span 3 */
+
+.container .card span:nth-child(3){
+      position: absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      
+     
+      height:3px;
+      /* key ->  move left to right, transparent to blue */
+      background: linear-gradient(to left, transparent,#1779ff);
+      /* key -> make move left to right */
+      animation: oliver3  2s linear infinite;
+      animation-delay: 2s;
+}
+
+/* key -> make move left to right */
+@keyframes oliver3{
+      0%{
+            transform: translateX(10%);
+      }
+      100%{
+            transform: translateX(-10%);
+      }
+}
+
+
+
+/* span 4 */
+
+.container .card span:nth-child(4){
+      position: absolute;
+      top:0;
+      left:0;
+            /* key -> width of moving line */
+      width:3px;
+
+
+      height:100%;
+      /* key ->  move top to bottom, transparent to blue */
+      background: linear-gradient(to bottom, transparent,#1779ff);
+      /* key -> make move left to right */
+      animation: oliver4  2s linear infinite;
+      /* key -> make work square together */
+      animation-delay: 3s;
+}
+
+/* key -> make move top to bottom */
+@keyframes oliver4{
+      0%{
+            transform: translateY(100%);
+      }
+      100%{
+            transform: translateY(-100%);
+      }
+}
