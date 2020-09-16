@@ -54,6 +54,7 @@ body {
     animation: oliver 5s linear infinite;
 }
 
+
 .square:hover span:nth-child(2) {
     background-color: aqua;
     border: none;
@@ -75,6 +76,7 @@ body {
     /*   key -> not circle */
     border-radius: 18% 82% 24% 28% / 58% 92% 44% 28%;
     transition: 0.5s;
+    /* key -> rotate infinite*/
     animation: oliver 5s linear infinite;
 }
 
@@ -83,7 +85,7 @@ body {
     border: none;
 }
 
-/* key -> rotate */
+/* key -> rotate infinite*/
 @keyframes oliver {
     0% {
         transform: rotate(0deg);

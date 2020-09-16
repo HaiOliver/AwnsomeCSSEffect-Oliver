@@ -1,0 +1,83 @@
+body{
+display:flex;
+justify-content: center;
+align-items: center;
+min-height:100vh;
+background: black;
+
+}
+
+.container{
+      position: relative;
+      width:800px;
+      height:500px;
+      background:#222;
+}
+
+.container .clip{
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+transition: 0.5s;
+
+}
+
+/* clip 1 */
+.container .clip.clip1{
+      /* key -> clip path */
+      clip-path: polygon(0 0, 54% 0, 20% 100%, 0% 100%);
+      background-size: center;
+      background: url("https://media.bitdegree.org/storage/media/images/2018/05/how-to-become-blockchain-developer.jpg");
+      background-position: center;
+}
+
+/* clip 2 */
+.container .clip.clip2{
+      /* key -> clip path */
+      clip-path: polygon(31% 0, 82% 0, 70% 100%, 17% 100%);
+      background: url("https://media.bitdegree.org/storage/media/images/2018/08/what-is-a-web-developer.jpg");
+      background-position: center;
+}
+
+/* clip 3 */
+.container .clip.clip3{
+      clip-path: polygon(76% 0, 100% 0, 100% 100%, 62% 100%);
+      background: url("https://www.veracode.com/sites/default/files/styles/blog_post_resize_960/public/developer-guide-blog-2.png?itok=JQGRVjEX");
+      background-position: center;
+}
+/* key
+hover -> container -> delete all */
+.container:hover .clip{
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+/* key
+combine -> above -> delete all && create full screen for each */
+.container .clip:hover{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.content{
+position: absolute;
+bottom:-100%;
+
+left:50%;
+width:70%;
+opacity:0;
+background:grey;
+transition:0.5s;
+}
+
+.clip:hover .content{
+
+bottom:0;
+opacity:1;
+
+}
+
+
+
+

@@ -24,9 +24,9 @@ section.zoom:before {
     bottom:0;
     /* MOST IMPORTANT MAKE MOUNTAINT GROW BIGGER AND DISAPPEAR */
     z-index:999;
-    /* MOST IMPORTANT MAKE MOUNTAINT GROW BIGGER AND DISAPPEAR */
+    /* MOST IMPORTANT MAKE MOUNTAINT GROW BIGGER AND DISAPPEAR -> blur background */
     background: linear-gradient(transparent, #fff);
-    
+
 }
 
 /* left mountain */
@@ -48,7 +48,7 @@ section.zoom .layer2{
     /* top:0px; */
     position: absolute;
     right:0;
-    
+
 }
 
 /* Text */
@@ -91,6 +91,6 @@ section.content p{
     left: 200px;
     color: #fff;
     text-shadow: 10px 5px 20px   black;
-    
+
 
 }

@@ -1,0 +1,45 @@
+.container{
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      width:900px;
+      position:relative;
+}
+
+body{
+      background:pink;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.container h2{
+      font-size: 5em;
+      line-height: 1em;
+      padding: 5px
+}
+
+.text1{
+      /* key -> make shadow -> negative -> top,left 
+            multiple shadow
+      */
+      box-shadow: 
+                  -3px -3px 2px rgba(255,255,255,0.3),
+                  5px 5px 15px rgba(0,0,0,0.2),
+                  15px 15px 15px rgba(0,0,0,0.2);
+      border-radius: 20px;
+      color:white;
+      margin-right:100px;
+}
+
+.text2{
+
+      color:pink;
+      padding:30px;
+      /* another box shadow */
+      filter: 
+                 drop-shadow(-6px -3px 2px rgba(255,255,255,0.3))
+                 drop-shadow(5px 5px 15px rgba(0,0,0,0.2))
+                 drop-shadow(15px 15px 15px rgba(0,0,0,0.2))
+      
+}

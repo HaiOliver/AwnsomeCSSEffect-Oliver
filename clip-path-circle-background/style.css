@@ -1,0 +1,38 @@
+
+/* make body >section */
+body{
+      min-height: 150vh;
+
+
+}
+
+section {
+position: relative;
+height: 100vh;
+width:100%;
+
+/* key -> put background image on top */
+background: url("https://images.pexels.com/photos/1379640/pexels-photo-1379640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+display:flex;
+justify-content: center;
+align-items: center;
+background-size: cover;
+
+/* key -> move -> image stay */
+background-attachment: fixed;
+/* key -> partly circle */
+clip-path:circle(180vh at 50% -80vh);
+}
+
+
+section .content{
+      text-align: center;
+      max-width: 1000px;
+}
+
+h2{
+font-size:10em;
+color:white;
+
+
+}
