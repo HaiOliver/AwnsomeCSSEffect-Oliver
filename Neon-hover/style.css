@@ -1,0 +1,152 @@
+body{
+background: black;
+display: flex;
+justify-content: center;
+align-items: center;
+/* make item center */
+height: 100vh;
+
+}
+
+ /* loader */
+.loader{
+
+position: relative;
+width: 300px;
+height:300px;
+overflow:hidden;
+/* make reflection */
+-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+
+}
+
+/* loader:hover */
+
+.loader:hover{
+      background: #03e9f4;
+      /* make spread light outside */
+      box-shadow: 0 0 5px  #03e9f4,
+                        0 0 10px  #03e9f4,
+                        0 0 250px  #03e9f4,
+                        0 0 450px  #03e9f4;
+
+
+}
+
+.loader span{
+
+      position: absolute;
+      display: block;
+}
+
+/* span */
+.loader span:nth-child(1){
+top:0;
+left:-100%;
+width:100%;
+height:30px;
+/* make background width:100% ->default -> fit 100% width ,change transparent ->color , 90deg -> left -> right*/
+background: linear-gradient(90deg,transparent, #03e9f4);
+animation: oliver1 1s linear infinite;
+/* make go around */
+animation-delay: 0s ;
+}
+
+/* span -> animated */
+@keyframes oliver1{
+
+0%{
+      left:-100%;
+
+}
+
+100%{
+      left:100%;
+
+}
+}
+
+
+/* span */
+.loader span:nth-child(3){
+      bottom:0;
+      right:-100%;
+      width:100%;
+      height:30px;
+      /* make background width:100% ->default -> fit 100% width ,change transparent ->color , 90deg -> left -> right*/
+      background: linear-gradient(270deg,transparent, #03e9f4);
+      animation: oliver3 1s linear infinite;
+      /* make go around */
+      animation-delay: 1s ;
+      }
+
+      /* span -> animated */
+      @keyframes oliver3{
+
+      0%{
+            left:100%;
+
+      }
+
+      100%{
+            left:-100%;
+
+      }
+      }
+
+
+/* span */
+.loader span:nth-child(4){
+      bottom:100%;
+      left:0;
+      width:30px;
+      height:100%;
+      /* make background width:100% ->default -> fit 100% width ,change transparent ->color , 90deg -> left -> right*/
+      background: linear-gradient(-180deg,transparent, #03e9f4);
+      animation: oliver4 1s linear infinite;
+      /* make go around */
+      animation-delay: 2s ;
+      }
+
+      /* span -> animated */
+      @keyframes oliver4{
+
+      0%{
+            bottom:-100%;
+
+      }
+
+      100%{
+            bottom:100%;
+
+      }
+      }
+
+
+
+/* span */
+.loader span:nth-child(2){
+      top:-100%;
+      right:0;
+      width:30px;
+      height:100%;
+      /* make background width:100% ->default -> fit 100% width ,change transparent ->color , 90deg -> left -> right*/
+      background: linear-gradient(180deg,transparent, #03e9f4);
+      animation: oliver2 1s linear infinite;
+      /* make go around */
+      animation-delay: 3s ;
+      }
+
+      /* span -> animated */
+      @keyframes oliver2{
+
+      0%{
+            top:-100%;
+
+      }
+
+      100%{
+            top:100%;
+
+      }
+      }

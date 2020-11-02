@@ -1,0 +1,50 @@
+.card{
+margin: auto;
+position: absolute;
+top:300px;
+
+width:600px;
+height: 350px;
+border-radius: 20px;
+background: linear-gradient(135deg,#dd4411,#491f8f);
+
+}
+
+img{
+
+position: absolute;
+bottom: 0;
+height: 400px;
+left:20%;
+/* transform: translateX(20%); */
+transition: 1s;
+}
+
+img:hover{
+/* key -> make img bigger -> hover it */
+height: 500px;
+left:40%;
+
+}
+
+.content{
+
+position: relative;
+width:50%;
+opacity:0;
+visibility:hidden;
+transition: 0.5s;
+
+}
+
+
+.content:hover{
+
+opacity:1;
+visibility:visible;
+left:0%;
+
+}
+
+
+

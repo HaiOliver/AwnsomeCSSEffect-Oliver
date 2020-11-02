@@ -1,0 +1,25 @@
+body{
+width:100%;
+height:100vh;
+background:
+            repeating-linear-gradient(0deg,#fff 0%,#000 50%,#000 50%,#000 100%),
+            repeating-linear-gradient(90deg, #fff 0%, #fff 50%, #000 50%, #000 100%);
+/* key ->color30px each */
+background-size: 30px 30px;
+/* key -> caro */
+background-blend-mode: difference
+
+}
+
+span{
+display: block;
+position: absolute;
+width: 150px;
+height: 150px;
+/* background:wheat; */
+background-size: cover;
+background-attachment: fixed;
+border-radius: 50%;
+background: url("https://images.pexels.com/photos/3722196/pexels-photo-3722196.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+}

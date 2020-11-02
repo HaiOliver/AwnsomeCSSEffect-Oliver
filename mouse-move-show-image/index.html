@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title of the document</title>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+
+<script>
+  document.addEventListener("mousemove",(e)=>{
+const body =document.querySelector("body")
+const bubbles =document.createElement("span")
+bubbles.style.left = -75 + e.offsetX + "px"
+bubbles.style.top = -75 + e.offsetY + "px"
+body.appendChild(bubbles)
+  })
+
+</script>
+
+</body>
+</html>

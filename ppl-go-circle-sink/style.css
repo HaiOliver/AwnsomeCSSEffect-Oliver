@@ -1,0 +1,49 @@
+body{
+
+background:#111;
+
+}
+
+.banner{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height: 100vh;
+background: blue;
+clip-path: circle(900px at center center);
+}
+
+
+
+.banner video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit: cover;
+
+
+}
+.container{
+position: relative;
+/* key -> make scroll ->top */
+margin-top:200vh;
+padding:100px;
+
+color:#fff;
+}
+
+
+.container h2{
+font-size: 2.5em;
+margin-bottom:20px;
+color: #fff;
+}
+
+.container p2{
+      font-size: 1.5em;
+      margin-bottom:20px;
+      color: #fff;
+      }

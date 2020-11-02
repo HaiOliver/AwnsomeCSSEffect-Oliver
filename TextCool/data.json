@@ -1,0 +1,17 @@
+[
+YelpStagram.Place(id: "dX6y4zA-1AtWsYnT4AZXNg", name: "Revolver", image_url: "https://s3-media4.fl.yelpcdn.com/bphoto/CAExZOlAizC-yyLZrZt4xQ/o.jpg",
+rating: 4.5, review_count: 539, price: Optional("$"), is_closed: false, url: "https://www.yelp.com/biz/revolver-vancouver?adjust_creative=Nw05CxJsrltl-i2wQtwfDw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=Nw05CxJsrltl-i2wQtwfDw", transactions: [], imageData: Optional(101422 bytes), photos: Optional(["https://s3-media4.fl.yelpcdn.com/bphoto/CAExZOlAizC-yyLZrZt4xQ/o.jpg", "https://s3-media3.fl.yelpcdn.com/bphoto/Ax6W9jTkw-ACj1FPxwg3lQ/o.jpg", "https://s3-media3.fl.yelpcdn.com/bphoto/LC29wnxLEPFyT5zqHocVWg/o.jpg"]), photoData: Optional([65395 bytes, 131780 bytes, 101422 bytes])),
+
+
+YelpStagram.Place(id: "MTrkGD8e4LRxTpUiYek9aQ",
+name: "Timbertrain Coffee Roasters",
+image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/TY15EKHP9l1HynTI8rCbFA/o.jpg", rating: 4.5, review_count: 227, price: Optional("$$"), is_closed: false,
+url: "https://www.yelp.com/biz/timbertrain-coffee-roasters-vancouver?adjust_creative=Nw05CxJsrltl-i2wQtwfDw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=Nw05CxJsrltl-i2wQtwfDw", transactions: [], imageData: Optional(57641 bytes),
+
+
+
+
+
+photos: Optional(["https://s3-media1.fl.yelpcdn.com/bphoto/TY15EKHP9l1HynTI8rCbFA/o.jpg", "https://s3-media2.fl.yelpcdn.com/bphoto/KIK0gx07BPQ1UMxhB994vQ/o.jpg", "https://s3-media4.fl.yelpcdn.com/bphoto/Sc-SiqB1CWNoNFaABEap4A/o.jpg"]), photoData: Optional([63626 bytes, 110251 bytes, 57641 bytes])),
+YelpStagram.Place(id: "GQK8trvjFDBuETAchTMVIA", name: "Nemesis Coffee", image_url: "https://s3-media2.fl.yelpcdn.com/bphoto/8znGs43WeevhECXLlpy4mw/o.jpg", rating: 4.0, review_count: 157, price: Optional("$$"), is_closed: false, url: "https://www.yelp.com/biz/nemesis-coffee-vancouver?adjust_creative=Nw05CxJsrltl-i2wQtwfDw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=Nw05CxJsrltl-i2wQtwfDw", transactions: [], imageData: Optional(111155 bytes), photos: Optional(["https://s3-media2.fl.yelpcdn.com/bphoto/8znGs43WeevhECXLlpy4mw/o.jpg", "https://s3-media4.fl.yelpcdn.com/bphoto/v2arUxh-5pHSRMQfBBF-SA/o.jpg", "https://s3-media4.fl.yelpcdn.com/bphoto/eEsytfYmM__GJEgcAT3_Ig/o.jpg"]), photoData: Optional([109892 bytes, 111155 bytes, 181284 bytes])),
+YelpStagram.Place(id: "GVqtAlXtjrRzsNqd6rzkxA", name: "Lost + Found Café", image_url: "https://s3-media2.fl.yelpcdn.com/bphoto/NAdbFPpa0wsYCvpzd4Ub2w/o.jpg", rating: 4.5, review_count: 106, price: Optional("$"), is_closed: false, url: "https://www.yelp.com/biz/lost-found-caf%C3%A9-vancouver?adjust_creative=Nw05CxJsrltl-i2wQtwfDw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=Nw05CxJsrltl-i2wQtwfDw", transactions: [], imageData: Optional(156813 bytes), photos: Optional(["https://s3-media2.fl.yelpcdn.com/bphoto/NAdbFPpa0wsYCvpzd4Ub2w/o.jpg", "https://s3-media2.fl.yelpcdn.com/bphoto/EnQG264y_XH8Iq_JYNnPBA/o.jpg", "https://s3-media2.fl.yelpcdn.com/bphoto/JGjggXPC5xa1BOYpvaB4FQ/o.jpg"]), photoData: Optional([134729 bytes, 156813 bytes, 244335 bytes]))]
