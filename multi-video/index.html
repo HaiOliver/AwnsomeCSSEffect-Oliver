@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title of the document</title>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+
+<section>
+  <video id="slider" autoplay muted loop>
+  <source src="https://player.vimeo.com/external/467681707.sd.mp4?s=b78c2f26227233debbba412db0a9239b1686d773&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+  </video>
+ <!-- list section -->
+<ul class="navigation">
+  <li onclick="click('video.mp4')"><img src="https://www.pixel4k.com/wp-content/uploads/2020/11/the-batman-2021-4k_1604347917-2048x1152.jpg"/></li>
+  <li onclick="click('video(1).mp4')"><img src="https://www.pixel4k.com/wp-content/uploads/2020/11/marvel-black-widow-2020-4k_1604347899-2048x1152.jpg"/></li>
+  <li onclick="click('')"><img src="https://www.pixel4k.com/wp-content/uploads/2020/11/baby-groot-listening-to-music-while-using-phone-4k_1604347899-2048x1152.jpg"/></li>
+  <li onclick="click()"><img src="https://www.pixel4k.com/wp-content/uploads/2020/11/milesmorales-4k_1604347899-2048x1463.jpg"/></li>
+</ul>
+
+</section>
+<script>
+function click(hjjdd){
+
+  document.getElementById('slider').src = hjjdd
+  console.log("video click")
+}
+</script>
+</body>
+</html>
